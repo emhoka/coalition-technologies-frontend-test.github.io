@@ -1,0 +1,82 @@
+:root {
+	--primary-color: #364659;
+	--text-color: #f4f4f4;
+	--grey: #ccc;
+	--mohave: 'Mohave', sans-serif;
+	--nunito: 'Nunito Sans', sans-serif;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	height: 100vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+	perspective: 10px;
+}
+
+/* Hero section */
+
+header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	transform-style: preserve-3d;
+	z-index: -1;
+}
+
+.background {
+	transform: translateZ(-10px) scale(2);
+}
+
+.foreground {
+	transform: translateZ(-5px) scale(1.5);
+}
+
+.background,
+.foreground {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+
+#navbar-content {
+	width: 60%;
+}
+
+#top-logo {
+	margin-left: 1rem;
+}
+
+.nav-links a {
+	color: var(--text-color);
+}
+
+.nav-links a,
+.second-nav-links a {
+	cursor: pointer;
+	font-weight: 600;
+	font-family: var(--nunito);
+}
+
+.history-link {
+	margin-right: 3rem;
+}
+
+.second-nav-links a {
+	color: var(--primary-color);
+}
+
+#navbar-one {
+	width: 100%;
+	position: fixed;
+	top: 0;
+}
