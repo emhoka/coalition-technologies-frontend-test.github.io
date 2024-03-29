@@ -259,3 +259,34 @@ header {
 	background-image: url("../images/tab-bg-02.png");
 }
 
+/* Footer */
+.footer {
+	background-color: var(--primary-color);
+	width: 100%;
+	height: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 90%;
+}
+
+.footer-logo-link {
+	margin-left: 1.5rem;
+}
+
+.footer-logo-link img {
+	width: 205px;
+	height: 65px;
+}
+
+.copyright {
+	color: var(--grey);
+	font-weight: 900;
+	font-family: var(--nunito);
+}
