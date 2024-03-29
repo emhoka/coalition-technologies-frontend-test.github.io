@@ -31,6 +31,10 @@ header {
 	z-index: -1;
 }
 
+.hero-section {
+	display: none;
+}
+
 .background {
 	transform: translateZ(-10px) scale(2);
 }
@@ -82,5 +86,59 @@ header {
 }
 
 #hero {
+	background-color: var(--text-color);
+}
+
+/* History section */
+.history-section {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.history-section {
+	background-image: url("../images/history-section-bg.png");
+	height: 100vh;
+	display: grid;
+	justify-items: center;
+	align-content: space-between;
+}
+
+.history-info {
+	padding-top: 2rem;
+	width: 62%;
+}
+
+.history-title {
+	margin-bottom: 1rem;
+}
+
+.history-text {
+	line-height: 1.6;
+}
+/* Carousel */
+.gallery {
+	height: 10rem;
+	width: 100%;
+}
+
+.gallery-cell {
+	height: 10rem;
+	width: 100%;
+	margin-right: 10px;
+	background-color: var(--primary-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flickity-page-dots {
+	top: 9.25rem;
+}
+
+.flickity-page-dots button {
+	background-color: rgba(255, 255, 255, 0.475);
+}
+
+.flickity-page-dots button.is-selected {
 	background-color: var(--text-color);
 }
