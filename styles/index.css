@@ -80,3 +80,7 @@ header {
 	position: fixed;
 	top: 0;
 }
+
+#hero {
+	background-color: var(--text-color);
+}
