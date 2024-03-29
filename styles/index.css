@@ -290,3 +290,85 @@ header {
 	font-weight: 900;
 	font-family: var(--nunito);
 }
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+	/* Hero Section */
+	.hero-section {
+		display: block;
+		background-image: url("../images/hero-image.png");
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		height: 40vh;
+	}
+
+	header {
+		display: none;
+	}
+
+	/* Nav Bars */
+	#navbar-content {
+		width: 100%;
+	}
+
+	#top-logo {
+		margin-left: 0;
+	}
+
+	.nav-links a,
+	.second-nav-links a {
+		font-size: small;
+	}
+
+	/* History Section */
+	.history-info {
+		width: 90%;
+	}
+
+	.history-text {
+		padding: 0 1rem;
+	}
+
+	/* Climb Section */
+	.climb-info {
+		width: 90%;
+		padding: 0;
+	}
+
+	/* Schedule Section */
+	.mountain-tabs,
+	#schedule-section,
+	.schedule-image {
+		display: none;
+	}
+
+	.accordion {
+		display: block;
+	}
+
+	/* Footer */
+	.footer-div {
+		width: 90%;
+	}
+
+	.footer-logo-link {
+		margin-left: 0;
+	}
+
+	.footer-logo-link img {
+		width: 120px;
+		height: 40px;
+	}
+
+	.copyright {
+		font-size: small;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.history-section {
+		height: 120vh;
+	}
+}
